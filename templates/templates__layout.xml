@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates
+	xmlns:a="http://slcf/templates/settings/bem-scheme/additional"
+	xmlns:b="http://slcf/templates/settings/bem-scheme/block"
+	xmlns:d="http://slcf/templates/settings/bem-scheme/data"
+	xmlns:e="http://slcf/templates/settings/bem-scheme/element"
+	xmlns:p="http://slcf/templates/settings/bem-scheme/pointer"
+	xmlns:m="http://slcf/templates/settings/bem-scheme/modification"
+	xmlns:t="http://slcf/templates/settings/bem-scheme/template"
+	xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml"
+	xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class"
+	>
+
+	<!-- layout > -->
+
+	<!--<t:layout_sticky-footer>-->
+		<!--<b:stripe>-->
+		<!--<m:type val="sticky-footer-outer"/>-->
+		<!--<a:page/>-->
+			<!--<b:stripe>-->
+			<!--<m:type val="sticky-footer"/>-->
+				<!--<e:in>-->
+				<!--<m:type val="sticky-footer"/>-->
+				<!--</e:in>-->
+			<!--</b:stripe>-->
+			<!--<p:footer />-->
+		<!--</b:stripe>-->
+	<!--</t:layout_sticky-footer>-->
+
+	<!--<t:page-title>-->
+		<!--<b:page-title>-->
+			<!--<d:content source="&page-title;"/>-->
+		<!--</b:page-title>-->
+	<!--</t:page-title>-->
+
+	<t:layout-gag>
+		<b:layout-gag>
+			<p:content/>
+		</b:layout-gag>
+	</t:layout-gag>
+
+	<!--<div style="height:0; width:0;">-->
+			<!--<img src="../production/fonts/w-webfont.svg" alt=""/>-->
+			<!--&lt;!&ndash;<img src="data:font/truetype;charset=utf-8;base64,AAEAAAAMAIAAAwBARkZUTWQGeVMAAAVgAAAAHE9TLzJUPF71AAABSAAAAFZjbWFwBGIJ3gAAAbgAAAFaZ2FzcP//AAMAAAVYAAAACGdseWYpF/kUAAADJAAAAFhoZWFk/Zv3dwAAAMwAAAA2aGhlYQgB/AUAAAEEAAAAJGhtdHgBVQAAAAABoAAAABZsb2NhAEQAYAAAAxQAAAAQbWF4cABKAAcAAAEoAAAAIG5hbWX2izYvAAADfAAAAbxwb3N0AAMAAAAABTgAAAAgAAEAAAABAAAwWLTMXw889QALBAAAAAAAzT7ZPQAAAADNPtk9AAAAAAQABAAAAAAIAAIAAAAAAAAAAQAABAAAAAAAAAAAAPwABAAAAQAAAAAAAAAAAAAAAAAAAAQAAQAAAAcABAABAAAAAAACAAAAAQABAAAAQAAAAAAAAAABAfQBkAAFAAgCAAIAAAAAAAIAAgAAAAIAAAACAAAAAgAFAwAAAAAAAAAAAAEAAAAAAAAAAAAAAABQZkVkAEAACQAgAzP/MwAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAFVAAAAAAAAAAAAAAAAAAAAAAADAAAAAwAAABwAAQAAAAAAVAADAAEAAAAcAAQAOAAAAAoACAACAAIAAAAKAA0AIP//AAAAAAAJAA0AIP//AAD/+v/4/+YAAQAAAAAAAAAAAAAAAAEGAAABAAAAAAAAAAEDBAAABQAAAAAAAAAAAAAAAAAAAAEAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAwADAAUABwAJAAsAAEAAAAABAAEAAADAAAxESERBAAEAPwAAAEAAAAAAAAAAAAAAAAxAAABAAAAAAAAAAAAAAAAMQAAAQAAAAAAAAAAAAAAADEAAAEAAAAAAAAAAAAAAAAxAAAAAA4ArgABAAAAAAAAAAAAAgABAAAAAAABAAgAFQABAAAAAAACAAQAKAABAAAAAAADACsAhQABAAAAAAAEAA8A0QABAAAAAAAFAAwA+wABAAAAAAAGAAEBDAADAAEECQAAAAAAAAADAAEECQABABAAAwADAAEECQACAAgAHgADAAEECQADAFYALQADAAEECQAEAB4AsQADAAEECQAFABgA4QADAAEECQAGAAIBCAAAAABTAG8AZgB0AGwAaQBuAGUAAFNvZnRsaW5lAABCAG8AbwBrAABCb29rAABGAG8AbgB0AEYAbwByAGcAZQAgADIALgAwACAAOgAgAE4AdQBsAGwAIABXAGgAaQB0AGUAcwBwAGEAYwBlACAAOgAgADEAMQAtADIALQAyADAAMQAzAABGb250Rm9yZ2UgMi4wIDogTnVsbCBXaGl0ZXNwYWNlIDogMTEtMi0yMDEzAABOAHUAbABsACAAVwBoAGkAdABlAHMAcABhAGMAZQAATnVsbCBXaGl0ZXNwYWNlAABWAGUAcgBzAGkAbwBuACAAMQAuADAAIAAAVmVyc2lvbiAxLjAgAAB3AAB3AAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//AAIAAAABAAAAAMmJbzEAAAAAzT4w8gAAAADNPtkv" alt="" width="0" height="0"/>&ndash;&gt;-->
+			<!--&lt;!&ndash;<img src="data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiA+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8bWV0YWRhdGE+PC9tZXRhZGF0YT4NCjxkZWZzPg0KPGZvbnQgaWQ9InNvZnRsaW5lYm9vayIgaG9yaXotYWR2LXg9IjAiID4NCjxmb250LWZhY2UgdW5pdHMtcGVyLWVtPSIyMDQ4IiBhc2NlbnQ9IjE2MzgiIGRlc2NlbnQ9Ii00MTAiIC8+DQo8bWlzc2luZy1nbHlwaCBob3Jpei1hZHYteD0iNTAwIiAvPg0KPGdseXBoIC8+DQo8Z2x5cGggaG9yaXotYWR2LXg9IjY4MiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3g5OyIgZD0iTTAgMHoiIC8+DQo8Z2x5cGggdW5pY29kZT0iJiN4YTsiIGQ9Ik0wIDB6IiAvPg0KPGdseXBoIHVuaWNvZGU9IiYjeGQ7IiBkPSJNMCAweiIgLz4NCjxnbHlwaCB1bmljb2RlPSIgIiBkPSJNMCAweiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3hhMDsiIGQ9Ik0wIDB6IiAvPg0KPGdseXBoIHVuaWNvZGU9IiYjeDIwMDA7IiBob3Jpei1hZHYteD0iMTAyNCIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDAxOyIgaG9yaXotYWR2LXg9IjIwNDgiIC8+DQo8Z2x5cGggdW5pY29kZT0iJiN4MjAwMjsiIGhvcml6LWFkdi14PSIxMDI0IiAvPg0KPGdseXBoIHVuaWNvZGU9IiYjeDIwMDM7IiBob3Jpei1hZHYteD0iMjA0OCIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA0OyIgaG9yaXotYWR2LXg9IjY4MiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA1OyIgaG9yaXotYWR2LXg9IjUxMiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA2OyIgaG9yaXotYWR2LXg9IjM0MSIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA3OyIgaG9yaXotYWR2LXg9IjM0MSIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA4OyIgaG9yaXotYWR2LXg9IjI1NiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA5OyIgaG9yaXotYWR2LXg9IjQwOSIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDBhOyIgaG9yaXotYWR2LXg9IjExMyIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDJmOyIgaG9yaXotYWR2LXg9IjQwOSIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDVmOyIgaG9yaXotYWR2LXg9IjUxMiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3hlMDAwOyIgaG9yaXotYWR2LXg9IjEwMDAiIGQ9Ik0wIDB6IiAvPg0KPC9mb250Pg0KPC9kZWZzPjwvc3ZnPiA=" alt="" width="0" height="0"/>&ndash;&gt;-->
+			<!--&lt;!&ndash;<svg width="40px" height="30px" version="1.1"&ndash;&gt;-->
+			  <!--&lt;!&ndash;xmlns = 'http://www.w3.org/2000/svg'>&ndash;&gt;-->
+			  <!--&lt;!&ndash;<text x="1" y="1" style="font:12px/1 'softline', a">Text using web safe font</text>&ndash;&gt;-->
+				<!--&lt;!&ndash;<image x="10" y="20" width="80" height="80" xlink:href="../production/fonts/w-webfont.svg" />&ndash;&gt;-->
+			<!--&lt;!&ndash;</svg>&ndash;&gt;-->
+
+		<!--</div>-->
+
+	<!--<cdata>-->
+<!--<![CDATA[-->
+
+<!--<div style="height:0; width:0;">-->
+<!--&lt;!&ndash;<img src="data:font/truetype;charset=utf-8;base64,AAEAAAAMAIAAAwBARkZUTWQGeVMAAAVgAAAAHE9TLzJUPF71AAABSAAAAFZjbWFwBGIJ3gAAAbgAAAFaZ2FzcP//AAMAAAVYAAAACGdseWYpF/kUAAADJAAAAFhoZWFk/Zv3dwAAAMwAAAA2aGhlYQgB/AUAAAEEAAAAJGhtdHgBVQAAAAABoAAAABZsb2NhAEQAYAAAAxQAAAAQbWF4cABKAAcAAAEoAAAAIG5hbWX2izYvAAADfAAAAbxwb3N0AAMAAAAABTgAAAAgAAEAAAABAAAwWLTMXw889QALBAAAAAAAzT7ZPQAAAADNPtk9AAAAAAQABAAAAAAIAAIAAAAAAAAAAQAABAAAAAAAAAAAAPwABAAAAQAAAAAAAAAAAAAAAAAAAAQAAQAAAAcABAABAAAAAAACAAAAAQABAAAAQAAAAAAAAAABAfQBkAAFAAgCAAIAAAAAAAIAAgAAAAIAAAACAAAAAgAFAwAAAAAAAAAAAAEAAAAAAAAAAAAAAABQZkVkAEAACQAgAzP/MwAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAFVAAAAAAAAAAAAAAAAAAAAAAADAAAAAwAAABwAAQAAAAAAVAADAAEAAAAcAAQAOAAAAAoACAACAAIAAAAKAA0AIP//AAAAAAAJAA0AIP//AAD/+v/4/+YAAQAAAAAAAAAAAAAAAAEGAAABAAAAAAAAAAEDBAAABQAAAAAAAAAAAAAAAAAAAAEAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAwADAAUABwAJAAsAAEAAAAABAAEAAADAAAxESERBAAEAPwAAAEAAAAAAAAAAAAAAAAxAAABAAAAAAAAAAAAAAAAMQAAAQAAAAAAAAAAAAAAADEAAAEAAAAAAAAAAAAAAAAxAAAAAA4ArgABAAAAAAAAAAAAAgABAAAAAAABAAgAFQABAAAAAAACAAQAKAABAAAAAAADACsAhQABAAAAAAAEAA8A0QABAAAAAAAFAAwA+wABAAAAAAAGAAEBDAADAAEECQAAAAAAAAADAAEECQABABAAAwADAAEECQACAAgAHgADAAEECQADAFYALQADAAEECQAEAB4AsQADAAEECQAFABgA4QADAAEECQAGAAIBCAAAAABTAG8AZgB0AGwAaQBuAGUAAFNvZnRsaW5lAABCAG8AbwBrAABCb29rAABGAG8AbgB0AEYAbwByAGcAZQAgADIALgAwACAAOgAgAE4AdQBsAGwAIABXAGgAaQB0AGUAcwBwAGEAYwBlACAAOgAgADEAMQAtADIALQAyADAAMQAzAABGb250Rm9yZ2UgMi4wIDogTnVsbCBXaGl0ZXNwYWNlIDogMTEtMi0yMDEzAABOAHUAbABsACAAVwBoAGkAdABlAHMAcABhAGMAZQAATnVsbCBXaGl0ZXNwYWNlAABWAGUAcgBzAGkAbwBuACAAMQAuADAAIAAAVmVyc2lvbiAxLjAgAAB3AAB3AAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//AAIAAAABAAAAAMmJbzEAAAAAzT4w8gAAAADNPtkv" alt="" width="0" height="0"/>&ndash;&gt;-->
+<!--<img src="data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiA+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8bWV0YWRhdGE+PC9tZXRhZGF0YT4NCjxkZWZzPg0KPGZvbnQgaWQ9InNvZnRsaW5lYm9vayIgaG9yaXotYWR2LXg9IjAiID4NCjxmb250LWZhY2UgdW5pdHMtcGVyLWVtPSIyMDQ4IiBhc2NlbnQ9IjE2MzgiIGRlc2NlbnQ9Ii00MTAiIC8+DQo8bWlzc2luZy1nbHlwaCBob3Jpei1hZHYteD0iNTAwIiAvPg0KPGdseXBoIC8+DQo8Z2x5cGggaG9yaXotYWR2LXg9IjY4MiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3g5OyIgZD0iTTAgMHoiIC8+DQo8Z2x5cGggdW5pY29kZT0iJiN4YTsiIGQ9Ik0wIDB6IiAvPg0KPGdseXBoIHVuaWNvZGU9IiYjeGQ7IiBkPSJNMCAweiIgLz4NCjxnbHlwaCB1bmljb2RlPSIgIiBkPSJNMCAweiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3hhMDsiIGQ9Ik0wIDB6IiAvPg0KPGdseXBoIHVuaWNvZGU9IiYjeDIwMDA7IiBob3Jpei1hZHYteD0iMTAyNCIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDAxOyIgaG9yaXotYWR2LXg9IjIwNDgiIC8+DQo8Z2x5cGggdW5pY29kZT0iJiN4MjAwMjsiIGhvcml6LWFkdi14PSIxMDI0IiAvPg0KPGdseXBoIHVuaWNvZGU9IiYjeDIwMDM7IiBob3Jpei1hZHYteD0iMjA0OCIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA0OyIgaG9yaXotYWR2LXg9IjY4MiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA1OyIgaG9yaXotYWR2LXg9IjUxMiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA2OyIgaG9yaXotYWR2LXg9IjM0MSIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA3OyIgaG9yaXotYWR2LXg9IjM0MSIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA4OyIgaG9yaXotYWR2LXg9IjI1NiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDA5OyIgaG9yaXotYWR2LXg9IjQwOSIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDBhOyIgaG9yaXotYWR2LXg9IjExMyIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDJmOyIgaG9yaXotYWR2LXg9IjQwOSIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3gyMDVmOyIgaG9yaXotYWR2LXg9IjUxMiIgLz4NCjxnbHlwaCB1bmljb2RlPSImI3hlMDAwOyIgaG9yaXotYWR2LXg9IjEwMDAiIGQ9Ik0wIDB6IiAvPg0KPC9mb250Pg0KPC9kZWZzPjwvc3ZnPiA=" alt="" width="0" height="0"/>-->
+<!--</div>-->
+
+<!--]]>			</cdata>-->
+
+	<!--t-layout.php-->
+	<t:layout>
+		<p:xdocument>
+			<p:page/>
+		</p:xdocument>
+    </t:layout>
+
+	<t:whitespace-prefetch>
+		<b:whitespaces-prefetch/>
+	</t:whitespace-prefetch>
+
+	<t:layout_with-overlay>
+		<p:xdocument>
+			<p:page/>
+			<p:overlay/>
+		</p:xdocument>
+    </t:layout_with-overlay>
+
+	<t:page>
+		<b:page>
+			<e:in>
+				<p:top-header/>
+				<p:header-stripe/>
+				<p:main-content/>
+				<p:footer/>
+				<p:float-edge/>
+			</e:in>
+		</b:page>
+	</t:page>
+
+	<t:top-header>
+		<b:stripe>
+			<m:type val="overhang"/>
+			<m:overhang val="top-header"/>
+			<m:content val="top-header"/>
+			<e:in>
+				<a:columns-layout>
+					<m:scheme val="abc-d"/>
+					</a:columns-layout>
+				<b:column>
+					<m:layout val="a"/>
+					<m:content val="select-region-and-top-links"/>
+					<e:in>
+						<p:country-select/>
+						<p:top-links/>
+						<!--<b:content-spacer/>-->
+					</e:in>
+				</b:column>
+				<b:column>
+					<m:layout val="b"/>
+					<m:content val="welcome"/>
+					<e:in>
+
+						<p:top-auth/>
+
+					</e:in>
+				</b:column>
+			</e:in>
+		</b:stripe>
+	</t:top-header>
+
+	<t:header-stripe>
+		<b:stripe>
+			<m:type val="overhang"/>
+			<m:overhang val="header"/>
+			<m:content val="header-outer"/>
+			<e:in>
+				<p:header-content/>
+				<p:stripe_content_main-menu/>
+			</e:in>
+		</b:stripe>
+	</t:header-stripe>
+
+	<t:header-content>
+		<b:stripe>
+			<m:content val="header"/>
+			<e:in>
+				<a:columns-layout>
+					<m:scheme val="abc-d"/>
+					</a:columns-layout>
+				<b:interlayer>
+					<m:column val="b"/>
+					<b:column>
+						<m:layout val="a"/>
+						<e:in>
+
+							<b:content-columns>
+								<m:layout-scheme val="a-b"/>
+								<m:content val="header"/>
+								<b:content-column>
+									<m:layout val="a"/>
+										<p:sl-logo/>
+										<p:slogan/>
+										<p:header-promo/>
+								</b:content-column>
+								<b:content-column>
+									<m:layout val="b"/>
+
+									<p:content-columns_content_header-contacts/>
+
+								</b:content-column>
+							</b:content-columns>
+
+						</e:in>
+					</b:column>
+					<b:column>
+						<m:layout val="b"/>
+						<m:content val="header-search"/>
+						<e:in>
+							<p:header-search/>
+						</e:in>
+					</b:column>
+				</b:interlayer>
+			</e:in>
+		</b:stripe>
+	</t:header-content>
+
+	<t:content-columns_content_header-contacts>
+		<b:content-columns>
+			<m:layout-scheme val="a-b"/>
+			<m:layout-type val="diff-dirs"/>
+			<b:content-column>
+				<m:layout val="a"/>
+				<m:content val="region-select"/>
+				<p:region-select/>
+			</b:content-column>
+			<b:content-column>
+				<m:layout val="b"/>
+				<m:content val="header-contacts"/>
+				<p:header-contacts/>
+			</b:content-column>
+		</b:content-columns>
+	</t:content-columns_content_header-contacts>
+
+	<t:stripe_content_page-title>
+		<b:stripe>
+			<m:content val="page-title"/>
+			<e:in>
+				<m:type val="content"/>
+				<p:content/>
+			</e:in>
+		</b:stripe>
+	</t:stripe_content_page-title>
+
+	<t:stripe_content_main-menu>
+		<b:stripe>
+			<m:content val="main-menu"/>
+			<e:in>
+				<m:type val="content"/>
+				<p:menu_type_main/>
+			</e:in>
+		</b:stripe>
+	</t:stripe_content_main-menu>
+
+	<t:stripe_content_search><p:search-stripe/></t:stripe_content_search>
+	<t:stripe_content_breadcrumbs><p:breadcrumbs-stripe/></t:stripe_content_breadcrumbs>
+
+	<t:breadcrumbs-stripe>
+		<p:content-stripe>
+			<p:breadcrumbs/>
+		</p:content-stripe>
+	</t:breadcrumbs-stripe>
+
+	<t:stripe_content_search_type_index>
+		<b:stripe>
+			<m:content val="search"/>
+			<e:in>
+				<a:columns-layout>
+					<m:scheme val="abc-d"/>
+					</a:columns-layout>
+				<b:column>
+					<m:layout val="a"/>
+					<!--<m:content val="search-field"/>-->
+					<e:in block="column">
+							<p:header-search/>
+					</e:in>
+				</b:column>
+				<b:column>
+					<m:layout val="b"/>
+					<!--<m:content val="search-example"/>-->
+					<e:in block="column">
+						<b:form-field-remark>
+							<m:content val="search-example"/>
+							<m:context val="full-search-columns"/>
+							<cdata><![CDATA[&#8594; Лидер запросов]]></cdata>
+							<b:search-example>
+								<m:type val="leader"/>
+								<a:link>
+									<!--<m:type val="pseudo"/>-->
+									</a:link>
+								Microsoft
+							</b:search-example>
+						</b:form-field-remark>
+					</e:in>
+				</b:column>
+			</e:in>
+		</b:stripe>
+	</t:stripe_content_search_type_index>
+
+
+	<t:footer>
+		<b:stripe>
+			<m:type val="overhang"/>
+			<m:overhang val="footer"/>
+			<m:content val="footer"/>
+			<e:in>
+				<m:content val="footer"/>
+
+				<b:stripe>
+					<m:content val="footer-contacts"/>
+					<e:in>
+						<a:columns-layout>
+							<m:type val="inner"/>
+							<m:scheme val="abc-d"/>
+							</a:columns-layout>
+
+						<b:column>
+							<m:layout val="a"/>
+							<m:content val="footer-contacts-1"/>
+							<e:in>
+
+								<p:footer-contacts_1/>
+
+
+							</e:in>
+						</b:column>
+
+						<b:column>
+							<m:layout val="b"/>
+							<m:content val="footer-contacts-2"/>
+							<e:in>
+
+								<p:footer-contacts_2/>
+
+
+							</e:in>
+						</b:column>
+
+					</e:in>
+				</b:stripe>
+				<b:footer-separator><a:billet block="true"><m:content val="footer-separator"/></a:billet><e:in/></b:footer-separator>
+				<b:stripe>
+					<m:content val="footer-menu"/>
+					<e:in>
+						<a:columns-layout>
+							<m:scheme val="abc-d"/>
+							</a:columns-layout>
+						<b:column>
+							<m:layout val="a"/>
+							<m:content val="footer-menu"/>
+							<e:in>
+
+								<p:footer-menu/>
+
+							</e:in>
+						</b:column>
+						<b:column>
+							<m:layout val="b"/>
+							<m:content val="copyright"/>
+							<e:in>
+
+								<p:site-age-rating/>
+								<p:copyright/>
+
+							</e:in>
+						</b:column>
+					</e:in>
+				</b:stripe>
+			</e:in>
+		</b:stripe>
+	</t:footer>
+
+	<t:main-content>
+		<p:stripe_content_breadcrumbs/>
+		<p:main-content__abc-d-columns/>
+		<p:stripe-spacer/>
+		<p:stripe_content_partners-statuses/>
+	</t:main-content>
+
+	<t:main>
+		<p:page-title/>
+		<p:content/>
+	</t:main>
+
+	<!--<t:main-content>-->
+		<!--<p:main-content__a-columns/>-->
+		<!--<p:main-content__a-b-columns/>-->
+		<!--<p:main-content__a-b-c-d-columns/>-->
+	<!--</t:main-content>-->
+
+	<t:main-content__a-columns>
+		<b:stripe>
+			<m:content val="main"/>
+			<e:in>
+				<m:type val="content"/>
+				<p:main/>
+			</e:in>
+		</b:stripe>
+	</t:main-content__a-columns>
+
+	<t:main-content__abc-d-columns>
+		<b:stripe>
+			<m:content val="main-sidebar"/>
+			<e:in>
+				<a:columns-layout>
+					<m:scheme val="abc-d"/>
+					</a:columns-layout>
+				<p:column_main/>
+				<p:column_sidebar/>
+			</e:in>
+		</b:stripe>
+	</t:main-content__abc-d-columns>
+
+	<t:main-content__a-c-columns>
+		<b:stripe>
+		<m:content val="main"/>
+		<m:type val="outer"/>
+		<a:form_custom-select />
+			<e:in>
+			<m:type val="interlayer-a-c"/>
+				<b:stripe>
+				<m:content val="sidebar-main-add-sidebar"/>
+					<e:in>
+					<a:columns-layout>
+						<m:scheme val="a-c"/>
+						</a:columns-layout>
+						<p:column_main/>
+						<p:column_add-sidebar/>
+					</e:in>
+				</b:stripe>
+			</e:in>
+		</b:stripe>
+	</t:main-content__a-c-columns>
+
+	<t:main-content__a-b-c-columns>
+		<b:stripe>
+		<m:content val="main"/>
+		<m:type val="outer"/>
+		<a:form_custom-select />
+			<e:in>
+			<m:type val="interlayer-a-b-c"/>
+				<b:stripe>
+				<m:content val="sidebar-main-add-sidebar"/>
+					<e:in>
+					<a:columns-layout>
+						<m:scheme val="a-b-c"/>
+						</a:columns-layout>
+						<p:column_main/>
+						<p:column_sidebar/>
+						<p:column_add-sidebar/>
+					</e:in>
+				</b:stripe>
+			</e:in>
+		</b:stripe>
+	</t:main-content__a-b-c-columns>
+
+	<t:column_add-sidebar>
+		<b:column>
+		<m:layout val="c"/>
+		<m:content val="add-sidebar"/>
+			<e:in>
+				<p:add-menu/>
+				<p:content/>
+			</e:in>
+		</b:column>
+	</t:column_add-sidebar>
+
+	<t:column_sidebar>
+		<b:column>
+		<m:layout val="b"/>
+		<m:content val="sidebar"/>
+			<e:in>
+				<p:section_content_menu/>
+				<p:content/>
+			</e:in>
+		</b:column>
+	</t:column_sidebar>
+
+	<t:column_main>
+		<b:column>
+		<m:layout val="a"/>
+		<m:content val="main"/>
+			<e:in>
+				<p:main/>
+			</e:in>
+		</b:column>
+	</t:column_main>
+
+	<t:content-stripe>
+		<b:stripe>
+			<e:in>
+				<m:type val="content"/>
+				<p:content/>
+			</e:in>
+		</b:stripe>
+	</t:content-stripe>
+
+	<t:stripe_type_content>
+		<b:stripe>
+			<e:in>
+				<m:type val="content"/>
+				<p:content/>
+			</e:in>
+		</b:stripe>
+	</t:stripe_type_content>
+
+	<t:stripe>
+		<b:stripe>
+			<e:in>
+				<p:content/>
+			</e:in>
+		</b:stripe>
+	</t:stripe>
+
+	<t:stripe-spacer>
+		<p:stripe_type_content>
+			<b:box><m:content val="stripe-spacer"/></b:box>
+		</p:stripe_type_content>
+	</t:stripe-spacer>
+
+
+	<!-- layout < -->
+
+</templates>
