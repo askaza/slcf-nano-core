@@ -14,11 +14,15 @@
 
 	<t:layout>
 		<p:xdocument>
-			Hello world
-			<p:content />
+			<p:page/>
 		</p:xdocument>
-    </t:layout>
+	</t:layout>
 
+	<t:page>
+		<b:page>
+			Hello world
+		</b:page>
+	</t:page>
 
 
 	<!-- layout < -->
