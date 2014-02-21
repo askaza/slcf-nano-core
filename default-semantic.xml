@@ -1,181 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" ?><default-semantic xmlns:a="http://slcf/templates/settings/bem-scheme/additional" xmlns:b="http://slcf/templates/settings/bem-scheme/block" xmlns:d="http://slcf/templates/settings/bem-scheme/data" xmlns:e="http://slcf/templates/settings/bem-scheme/element" xmlns:p="http://slcf/templates/settings/bem-scheme/pointer" xmlns:m="http://slcf/templates/settings/bem-scheme/modification" xmlns:t="http://slcf/templates/settings/bem-scheme/template" xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml" xmlns:un="http://slcf/templates/settings/bem-scheme/unknown-namespace" xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class">
 
 	<!--html document > -->
-		<b:xdocument noclass="true" tag="html" x:lang="ru" x:id="nojs"/>
-		<e:head block="xdocument" noclass="true" tag="head"/>
-		<e:title block="xdocument" noclass="true" tag="title"/>
-		<e:body block="xdocument" noclass="true" tag="body"/>
-		<b:xlink noclass="true" tag="link"/>
-			<m:style block="xlink" x:rel="stylesheet" x:media="screen"/>
-			<m:favicon block="xlink" x:rel="shortcut icon" x:href="favicon.ico" x:type="image/x-icon"/>
+	<b:xdocument noclass="true" tag="html" x:lang="ru" x:id="nojs"/>
+	<e:head block="xdocument" noclass="true" tag="head"/>
+	<e:title block="xdocument" noclass="true" tag="title"/>
+	<e:body block="xdocument" noclass="true" tag="body"/>
+	<b:xlink noclass="true" tag="link"/>
+	<m:style block="xlink" x:rel="stylesheet" x:media="screen"/>
+	<m:favicon block="xlink" x:rel="shortcut icon" x:href="favicon.ico" x:type="image/x-icon"/>
 
-		<b:xstyle noclass="true" tag="style" x:type="text/css"/>
-		<b:xscript noclass="true" tag="script" x:type="text/javascript" x:src="js/jquery.js"/>
-		<b:xmeta noclass="true" tag="meta"/>
-		<m:content val="charset" block="xmeta" x:charset="utf-8"/>
-		<!-- for html5 syntax of charset declaration in ant build run replaceregexp which delete xhtml charset declaration-->
-		<!--<m:content val="charset" block="xmeta" x:http-equiv="Content-Type" x:content="text/html; charset=UTF-8"/>-->
-		<m:content val="description" block="xmeta" x:name="description" x:content="Softline"/>
-		<m:content val="keywords" block="xmeta" x:name="keywords" x:content="Softline"/>
-		<m:content val="viewport" block="xmeta" x:name="viewport" x:content="width=1024"/>
-		<m:content val="imagetoolbar" block="xmeta" x:http-equiv="imagetoolbar" x:content="no"/>
-		<m:content val="user-agent" block="xmeta" x:http-equiv="X-UA-Compatible" x:content="IE=edge"/>
+	<b:xstyle noclass="true" tag="style" x:type="text/css"/>
+	<b:xscript noclass="true" tag="script" x:type="text/javascript" x:src="js/jquery.js"/>
+	<b:xmeta noclass="true" tag="meta"/>
+	<m:content val="charset" block="xmeta" x:charset="utf-8"/>
+	<!-- for html5 syntax of charset declaration in ant build run replaceregexp which delete xhtml charset declaration-->
+	<!--<m:content val="charset" block="xmeta" x:http-equiv="Content-Type" x:content="text/html; charset=UTF-8"/>-->
+	<m:content val="description" block="xmeta" x:name="description" x:content="Softline"/>
+	<m:content val="keywords" block="xmeta" x:name="keywords" x:content="Softline"/>
+	<m:content val="viewport" block="xmeta" x:name="viewport" x:content="width=1024"/>
+	<m:content val="imagetoolbar" block="xmeta" x:http-equiv="imagetoolbar" x:content="no"/>
+	<m:content val="user-agent" block="xmeta" x:http-equiv="X-UA-Compatible" x:content="IE=edge"/>
 	<!--html document < -->
 
 	<!--abstract list > -->
 	<b:list tag="ul"/>
-		<e:item-caption block="list" tag="span"/>
-		<e:item-hash block="list" tag="span"/>
-		<e:item-property block="list" tag="span"/>
-		<!--<e:item-text block="list" tag="span"/>-->
-		<e:item-delimeter block="list" tag="span"/>
+	<e:item block="list" tag="li"/>
 	<!--abstract list < -->
 
-	<!--menu > -->
-		<e:list block="menu" tag="ul"/>
-	<!--menu < -->
 
 	<!--link > -->
-		<b:link tag="a" x:href="#" x:title=""/>
-			<m:type val="pseudo" block="link" tag="span"/>
-			<m:type val="anchor" block="link" tag="a" x:href="#" x:title=""/>
-			<m:resource val="external" block="link" x:target="_blank"/>
+	<b:link tag="a" x:href="#" x:title=""/>
+	<m:type val="pseudo" block="link" tag="span"/>
+	<m:type val="anchor" block="link" tag="a" x:href="#" x:title=""/>
+	<m:resource val="external" block="link" x:target="_blank"/>
 	<!--link < -->
 
-	<!--table > -->
-	<b:table tag="table"/>
-		<b:table-group tag="tbody"/>
-			<m:type val="heading" block="table-group" tag="thead"/>
-			<!-- Но! .b-table-group_type_heading != <thead> . <thead> всегда один, .b-table-group_type_heading может быть много и не обязательно на <thead> -->
-			<m:type val="footer" block="table-group" tag="tfoot"/>
-			<b:table-row tag="tr"/>
-				<b:cell tag="td"/>
-					<m:type val="heading" block="cell" tag="th"/>
-		<e:colgroup block="table" tag="colgroup"/>
-		<e:col block="table" tag="col"/>
-	<!--table <-->
-
 	<!--form > -->
-	<b:form tag="form" x:action="?"/>
+	<b:form tag="form" x:action="?"/>	
+	
+	<!--form-field > -->
+	<b:form-field tag="input" x:name="fField" x:id="fField"/>
+	<m:type val="text" block="form-field" x:type="text"/>
+	<m:type val="password" block="form-field" x:type="password"/>
+	<m:type val="textarea" block="form-field" tag="textarea" x:rows="3"/>
+	<m:type val="submit" block="form-field" x:type="submit"/>
+	<m:type val="reset" block="form-field" x:type="reset"/>
+	<m:type val="checkbox" block="form-field" x:type="checkbox"/>
+	<m:type val="radio" block="form-field" x:type="radio"/>
+	<m:type val="radio-button" block="form-field" x:type="radio"/>
+	<m:type val="select" block="form-field" tag="select"/>
+	<m:type val="email" block="form-field" x:type="email"/>
+	<m:type val="tel" block="form-field" x:type="tel"/>
+	<m:type val="file-upload" block="form-field" x:type="file"/>
+	<m:type val="hidden" block="form-field" x:type="hidden"/>
 
-		<!--form-fields-group > -->
-		<b:form-fields-group tag="fieldset" />
-			<e:title block="form-fields-group" tag="legend"/>
-		<!--form-fields-group < -->
+	<e:option-group block="form-field" tag="optgroup" x:label="option-group-label"/>
+	<e:option block="form-field" tag="option"/>
+	<!--form-field < -->
 
-		<!--form-fields-list > -->
-		<b:form-fields-list tag="ul"/>
-		<!--form-fields-list < -->
-
-		<!--field-composition > -->
-		<b:field-composition tag="dl"/>
-			<e:title block="field-composition" tag="dt"/>
-			<e:title-text block="field-composition" tag="span"/>
-			<e:content block="field-composition" tag="dd"/>
-		<!--field-composition < -->
-
-		<!--form-field > -->
-		<b:form-field tag="input" x:name="fField" x:id="fField"/>
-			<m:type val="text" block="form-field" x:type="text"/>
-			<m:type val="password" block="form-field" x:type="password"/>
-			<m:type val="textarea" block="form-field" tag="textarea" x:rows="3"/>
-			<m:type val="submit" block="form-field" x:type="submit"/>
-			<m:type val="reset" block="form-field" x:type="reset"/>
-			<m:type val="checkbox" block="form-field" x:type="checkbox"/>
-			<m:type val="radio" block="form-field" x:type="radio"/>
-			<m:type val="radio-button" block="form-field" x:type="radio"/>
-			<m:type val="select" block="form-field" tag="select"/>
-			<m:type val="email" block="form-field" x:type="email"/>
-			<m:type val="tel" block="form-field" x:type="tel"/>
-			<m:type val="file-upload" block="form-field" x:type="file"/>
-			<m:type val="hidden" block="form-field" x:type="hidden"/>
-
-			<e:option-group block="form-field" tag="optgroup" x:label="option-group-label"/>
-			<e:option block="form-field" tag="option"/>
-		<!--form-field < -->
-
-		<!--form-field-label > -->
-		<b:form-field-label tag="label" x:for="#fField"/>
-		<!--form-field-label < -->
-
-		<m:content val="form-field" block="billet" tag="label"/>
-		<b:form-field-remark tag="small"/>
-		<b:required-field-symbol tag="small"/>
-		<b:form-field-intro tag="span"/>
+	<!--form-field-label > -->
+	<b:form-field-label tag="label" x:for="#fField"/>
+	<!--form-field-label < -->
 
 	<!--form < -->
 
-	<!--tabs > -->
-	<b:tabs tag="dl"/>
-		<e:tab-title block="tabs" tag="dt"/>
-		<e:tab-content block="tabs" tag="dd"/>
-		<e:tab-image block="tabs" tag="img" x:src="#" x:alt=""/>
-	<!--tabs < -->
-
-	<!--breadcrumbs > -->
-	<b:breadcrumbs tag="p" xmlns:v="http://rdf.data-vocabulary.org/#"/>
-		<e:item block="breadcrumbs" tag="span" x:typeof="v:Breadcrumb"/>
-		<e:item-text block="breadcrumbs" tag="span" x:property="v:title" x:rel="v:url"/>
-			<m:type val="current" element="item" block="breadcrumbs" tag="span"/>
-	<!--breadcrumbs < -->
-
-	<!--calendar > -->
-	<b:calendar-grid tag="table"/>
-		<e:labels block="calendar-grid" tag="thead"/>
-		<e:body block="calendar-grid" tag="tbody"/>
-			<e:week block="calendar-grid" tag="tr" />
-				<e:cell block="calendar-grid" tag="td"/>
-				<m:type val="label" element="cell" block="calendar-grid" tag="th"/>
-				<m:type val="weekend" element="cell" block="calendar-grid" tag="td"/>
-					<e:date block="calendar-grid" tag="span"/>
-	<!--calendar < -->
-
 	<!--headings >-->
-		<m:level val="1" block="heading" tag="h1"/>
-		<m:level val="2" block="heading" tag="h2"/>
-		<m:level val="3" block="heading" tag="h3"/>
-		<m:level val="4" block="heading" tag="h4"/>
-		<m:level val="5" block="heading" tag="h5"/>
-		<m:level val="6" block="heading" tag="h6"/>
+	<m:level val="1" block="heading" tag="h1"/>
+	<m:level val="2" block="heading" tag="h2"/>
+	<m:level val="3" block="heading" tag="h3"/>
+	<m:level val="4" block="heading" tag="h4"/>
+	<m:level val="5" block="heading" tag="h5"/>
+	<m:level val="6" block="heading" tag="h6"/>
 	<!--headings < -->
 
-	<b:paragraph tag="p"/>
-
-	<!--newline > -->
-	<b:newline tag="span"/>
-	<!--newline < -->
-
-	<!--rating-scale > -->
-		<e:item block="rating-scale" tag="span"/>
-		<e:item-helper block="rating-scale" tag="span"/>
-		<e:reset block="rating-scale" tag="span"/>
-	<!--rating-scale < -->
-
-	<!--popup > -->
-		<e:close block="popup" tag="span"/>
-	<!--popup < -->
-
-	<!--pagination > -->
-		<b:pagination-list tag="ul" />
-	<!--pagination < -->
-
-	<b:line-break tag="br"/>
-
-	<b:items-number tag="span"/>
-
-	<!--stories/story > -->
-	<b:stories tag="ul"/>
-	<e:date block="story" tag="small"/>
-	<e:title block="story" tag="h4"/>
-	<e:summary block="story" tag="p"/>
-	<!--stories/story < -->
-
 	<b:page-title tag="h1"/>
-
-	<!--handlist > -->
-		<e:section block="handlist" tag="dl"/>
-		<e:character block="handlist" tag="dt"/>
-		<e:items block="handlist" tag="dd"/>
-	<!--handlist < -->
 
 </default-semantic>
