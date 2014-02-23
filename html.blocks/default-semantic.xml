@@ -1,277 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" ?><default-semantic xmlns:a="http://slcf/templates/settings/bem-scheme/additional" xmlns:b="http://slcf/templates/settings/bem-scheme/block" xmlns:d="http://slcf/templates/settings/bem-scheme/data" xmlns:e="http://slcf/templates/settings/bem-scheme/element" xmlns:p="http://slcf/templates/settings/bem-scheme/pointer" xmlns:m="http://slcf/templates/settings/bem-scheme/modification" xmlns:t="http://slcf/templates/settings/bem-scheme/template" xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml" xmlns:un="http://slcf/templates/settings/bem-scheme/unknown-namespace" xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class">
 
-	<!-- html document > -->
-	<b:xdocument
-			tag="html"
-			x:lang="ru"
-			x:id="nojs"
-			noclass="true"
-	/>
-	<e:head
-			block="xdocument"
-			tag="head"
-			noclass="true"
-	/>
-	<e:title
-			block="xdocument"
-			tag="title"
-			noclass="true"
-	/>
-	<e:body
-			block="xdocument"
-			tag="body"
-			noclass="true"
-	/>
-	<b:xlink
-			tag="link"
-			noclass="true"
-	/>
-	<m:style
-			block="xlink"
-			x:rel="stylesheet"
-			x:media="screen"
-	/>
-	<m:favicon
-			block="xlink"
-			x:rel="shortcut icon"
-			x:href="favicon.ico"
-			x:type="image/x-icon"
-	/>
-	<b:xstyle
-			tag="style"
-			x:type="text/css"
-			noclass="true"
-	/>
-	<b:xscript
-			tag="script"
-			x:type="text/javascript"
-			x:src="js/jquery.js"
-			noclass="true"
-	/>
-	<b:xmeta
-			tag="meta"
-			noclass="true"
-	/>
-	<m:content
-			val="charset"
-			block="xmeta"
-			x:charset="utf-8"
-	/>
-	<!--	Because of html5 charset declaration syntax
-	 		in external build tools run replace script
-	 		which delete xhtml charset declaration.
-	 -->
-	<!--<m:content-->
-			<!--val="charset"-->
-			<!--block="xmeta"-->
-			<!--x:http-equiv="Content-Type"-->
-			<!--x:content="text/html; charset=UTF-8"-->
-	<!--/>-->
-	<m:content
-			val="description"
-			block="xmeta"
-			x:name="description"
-			x:content="Softline"
-	/>
-	<m:content
-			val="keywords"
-			block="xmeta"
-			x:name="keywords"
-			x:content="Softline"
-	/>
-	<m:content
-			val="viewport"
-			block="xmeta"
-			x:name="viewport"
-			x:content="width=1024"
-	/>
-	<m:content
-			val="imagetoolbar"
-			block="xmeta"
-			x:http-equiv="imagetoolbar"
-			x:content="no"
-	/>
-	<m:content
-			val="user-agent"
-			block="xmeta"
-			x:http-equiv="X-UA-Compatible"
-			x:content="IE=edge"
-	/>
-	<!-- html document < -->
+	<!-- HTML document > -->
+	<b:xdocument tag="html" x:lang="ru" x:id="nojs" noclass="true"/>
+	<e:head block="xdocument" noclass="true" tag="head"/>
+	<e:title block="xdocument" noclass="true" tag="title"/>
+	<e:body block="xdocument" noclass="true" tag="body"/>
+	<b:xlink tag="link" noclass="true"/>
+	<m:style block="xlink" x:rel="stylesheet" x:media="screen"/>
+	<m:favicon block="xlink" x:rel="shortcut icon" x:href="favicon.ico" x:type="image/x-icon"/>
+	<b:xstyle tag="style" x:type="text/css" noclass="true"/>
+	<b:xscript tag="script" x:type="text/javascript" x:src="js/jquery.js" noclass="true"/>
+	<b:xmeta tag="meta" noclass="true"/>
+	<m:content val="charset" block="xmeta" x:charset="utf-8"/>
+	<m:content val="description" block="xmeta" x:name="description" x:content="Softline"/>
+	<m:content val="keywords" block="xmeta" x:name="keywords" x:content="Softline"/>
+	<m:content val="viewport" block="xmeta" x:name="viewport" x:content="width=1024"/>
+	<m:content val="imagetoolbar" block="xmeta" x:http-equiv="imagetoolbar" x:content="no"/>
+	<m:content val="user-agent" block="xmeta" x:http-equiv="X-UA-Compatible" x:content="IE=edge"/>
+	<!-- HTML document < -->
 
-	<!-- abstract list > -->
-	<b:list
-			tag="ul"
-	/>
-	<e:item
-			block="list"
-			tag="li"
-	/>
-	<!-- abstract list < -->
+	<!-- Abstract list > -->
+	<b:list tag="ul"/>
+	<e:item block="list" tag="li"/>
+	<!-- Abstract list < -->
 
-	<!-- link > -->
-	<b:link
-			tag="a"
-			x:href="#"
-			x:title=""
-	/>
-	<m:type
-			val="pseudo"
-			block="link"
-			tag="span"
-	/>
-	<m:type
-			val="anchor"
-			block="link"
-			tag="a"
-			x:href="#"
-			x:title=""
-	/>
-	<m:resource
-			val="external"
-			block="link"
-			x:target="_blank"
-	/>
-	<!-- link < -->
+	<!-- Links > -->
+	<b:link tag="a" x:href="#" x:title=""/>
+	<m:type val="pseudo" block="link" tag="span"/>
+	<m:type val="anchor" block="link" tag="a" x:href="#" x:title=""/>
+	<m:resource val="external" block="link" x:target="_blank"/>
+	<!-- Link < -->
 
 	<!-- Forms > -->
-	<b:form
-			tag="form"
-			x:action="?"
-	/>
+	<b:form tag="form" x:action="?"/>	
 	
 	<!-- Field > -->
-	<b:form-field
-			tag="input"
-			x:name="fField"
-			x:id="fField"
-	/>
-	<m:type
-			val="text"
-			block="form-field"
-			x:type="text"
-	/>
-	<m:type
-			val="password"
-			block="form-field"
-			x:type="password"
-	/>
-	<m:type
-			val="textarea"
-			block="form-field"
-			tag="textarea"
-			x:rows="3"
-	/>
-	<m:type
-			val="submit"
-			block="form-field"
-			x:type="submit"
-	/>
-	<m:type
-			val="reset"
-			block="form-field"
-			x:type="reset"
-	/>
-	<m:type
-			val="checkbox"
-			block="form-field"
-			x:type="checkbox"
-	/>
-	<m:type
-			val="radio"
-			block="form-field"
-			x:type="radio"
-	/>
-	<m:type
-			val="radio-button"
-			block="form-field"
-			x:type="radio"/>
-	<m:type
-			val="select"
-			block="form-field"
-			tag="select"
-	/>
-	<m:type
-			val="email"
-			block="form-field"
-			x:type="email"
-	/>
-	<m:type
-			val="tel"
-			block="form-field"
-			x:type="tel"
-	/>
-	<m:type
-			val="file-upload"
-			block="form-field"
-			x:type="file"
-	/>
-	<m:type
-			val="hidden"
-			block="form-field"
-			x:type="hidden"
-	/>
-
-	<!-- select parts < -->
-	<e:option-group
-			block="form-field"
-			tag="optgroup"
-			x:label="option-group-label"
-			/>
-	<e:option
-			block="form-field"
-			tag="option"
-			/>
-	<!-- select parts < -->
-
+	<b:form-field tag="input" x:name="fField" x:id="fField"/>
+	<m:type val="text" block="form-field" x:type="text"/>
+	<m:type val="password" block="form-field" x:type="password"/>
+	<m:type val="textarea" block="form-field" tag="textarea" x:rows="3"/>
+	<m:type val="submit" block="form-field" x:type="submit"/>
+	<m:type val="reset" block="form-field" x:type="reset"/>
+	<m:type val="checkbox" block="form-field" x:type="checkbox"/>
+	<m:type val="radio" block="form-field" x:type="radio"/>
+	<m:type val="radio-button" block="form-field" x:type="radio"/>
+	<m:type val="select" block="form-field" tag="select"/>
+	<m:type val="email" block="form-field" x:type="email"/>
+	<m:type val="tel" block="form-field" x:type="tel"/>
+	<m:type val="phone" block="form-field" x:type="tel"/>
+	<m:type val="file" block="form-field" x:type="file"/>
+	<m:type val="upload" block="form-field" x:type="file"/>
+	<m:type val="file-upload" block="form-field" x:type="file"/>
+	<m:type val="hidden" block="form-field" x:type="hidden"/>
+	<e:option-group block="form-field" tag="optgroup" x:label="option-group-label"/>
+	<e:option block="form-field" tag="option"/>
 	<!-- Field < -->
 
-	<!-- Field label > -->
-	<b:form-field-label
-			tag="label"
-			x:for="#fField"
-	/>
-	<!-- Field label < -->
+	<b:form-field-label tag="label" x:for="#fField"/>
 
-	<!--Form < -->
+	<!-- Forms < -->
 
-	<!-- Headings > -->
-	<m:level
-			val="1"
-			block="heading"
-		 	tag="h1"
-	/>
-	<m:level
-			val="2"
-			block="heading"
-			tag="h2"
-	/>
-	<m:level
-			val="3"
-			block="heading"
-			tag="h3"
-	/>
-	<m:level
-			val="4"
-			block="heading"
-			tag="h4"
-	/>
-	<m:level
-			val="5"
-			block="heading"
-			tag="h5"
-	/>
-	<m:level
-			val="6"
-			block="heading"
-			tag="h6"
-	/>
+	<!-- Headings >-->
+	<m:level val="1" block="heading" tag="h1"/>
+	<m:level val="2" block="heading" tag="h2"/>
+	<m:level val="3" block="heading" tag="h3"/>
+	<m:level val="4" block="heading" tag="h4"/>
+	<m:level val="5" block="heading" tag="h5"/>
+	<m:level val="6" block="heading" tag="h6"/>
 	<!-- Headings < -->
 
-	<!-- Page title > -->
-	<b:page-title
-			tag="h1"
-	/>
-	<!-- Page title < -->
+	<b:page-title tag="h1"/>
 
 </default-semantic>
