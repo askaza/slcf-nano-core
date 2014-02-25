@@ -1,16 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<templates
-	xmlns:a="http://slcf/templates/settings/bem-scheme/additional"
-	xmlns:b="http://slcf/templates/settings/bem-scheme/block"
-	xmlns:d="http://slcf/templates/settings/bem-scheme/data"
-	xmlns:e="http://slcf/templates/settings/bem-scheme/element"
-	xmlns:p="http://slcf/templates/settings/bem-scheme/pointer"
-	xmlns:m="http://slcf/templates/settings/bem-scheme/modification"
-	xmlns:t="http://slcf/templates/settings/bem-scheme/template"
-	xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml"
-	xmlns:un="http://slcf/templates/settings/bem-scheme/unknown-namespace"
-	xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class"
-	>
+<?xml version="1.0" encoding="UTF-8" ?><templates xmlns:a="http://slcf/templates/settings/bem-scheme/additional" xmlns:b="http://slcf/templates/settings/bem-scheme/block" xmlns:d="http://slcf/templates/settings/bem-scheme/data" xmlns:e="http://slcf/templates/settings/bem-scheme/element" xmlns:p="http://slcf/templates/settings/bem-scheme/pointer" xmlns:m="http://slcf/templates/settings/bem-scheme/modification" xmlns:t="http://slcf/templates/settings/bem-scheme/template" xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml" xmlns:un="http://slcf/templates/settings/bem-scheme/unknown-namespace" xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class">
 
 <t:xdocument>
 <b:xdocument>
@@ -22,7 +10,6 @@
 
 		<b:xlink><m:favicon/></b:xlink>
 		<p:xstyles/><p:javascript_head/>
-		<p:xlink_content_microformats/>
 	</e:head>
 	<e:body>
 		<p:content/>
@@ -33,17 +20,17 @@
 
 	<t:xmeta>
 		<b:xmeta><m:content val="charset"/></b:xmeta>
-		<p:xmeta__keywords/>
-		<p:xmeta__description/>
-		<p:xmeta__viewport/>
+		<p:xmeta_content_keywords/>
+		<p:xmeta_content_description/>
+		<p:xmeta_content_viewport/>
 		<cdata><![CDATA[<!--[if IE ]>]]></cdata>
 			<b:xmeta><m:content val="imagetoolbar"/></b:xmeta>
 			<b:xmeta><m:content val="user-agent"/></b:xmeta>
 		<cdata><![CDATA[<![endif]-->]]></cdata>
 	</t:xmeta>
-	<t:xmeta__keywords><b:xmeta><m:content val="keywords"/></b:xmeta></t:xmeta__keywords>
-	<t:xmeta__description><b:xmeta><m:content val="description"/></b:xmeta></t:xmeta__description>
-	<t:xmeta__viewport><b:xmeta><m:content val="viewport"/></b:xmeta></t:xmeta__viewport>
+	<t:xmeta_content_keywords><b:xmeta><m:content val="keywords"/></b:xmeta></t:xmeta_content_keywords>
+	<t:xmeta_content_description><b:xmeta><m:content val="description"/></b:xmeta></t:xmeta_content_description>
+	<t:xmeta_content_viewport><b:xmeta><m:content val="viewport"/></b:xmeta></t:xmeta_content_viewport>
 
 <t:xtitle><p:content/></t:xtitle>
 
@@ -57,69 +44,17 @@
 		<b:xlink x:href="css/ie8.css"><m:style/></b:xlink>
 	<cdata><![CDATA[<![endif]-->]]></cdata>
 	<cdata><![CDATA[<!--[if lt IE 8 ]>]]></cdata>
-		<b:xlink x:href="css/ie.css"><m:style/></b:xlink>
-		<b:xlink x:href="css/ie_main.css"><m:style/></b:xlink>
+		<b:xlink x:href="css/ie7.css"><m:style/></b:xlink>
 	<cdata><![CDATA[<![endif]-->]]></cdata>
 </t:xstyles>
-
-<t:xlink_content_microformats>
-	<b:xlink x:rel="profile" x:href="http://microformats.org/profile/hcalendar"/>
-	<b:xlink x:rel="profile" x:href="http://microformats.org/profile/hcard"/>
-</t:xlink_content_microformats>
 
 	<t:javascript_head>
 		<p:content/>
 	</t:javascript_head>
 
 	<t:javascript_body>
-		<b:xscript x:src="js/jquery-1.7.2.min.js"/>
-		<b:xscript x:src="js/jquery.placeholder.min.js"/>
-		<b:xscript x:src="js/inputnum.jquery.js"/>
-		<!--<b:xscript x:src="js/jquery.jqtransform.js"/>-->
-		<b:xscript x:src="js/bootstrap-datepicker.js"/>
-		<!--<b:xscript x:src="js/jquery.ba-resize.min.js"/>-->
-		<b:xscript x:src="js/jquery.mousewheel.js"/>
-		<b:xscript x:src="js/jquery.scrollpane.js"/>
-		<b:xscript x:src="js/jquery.core-ui-select.js"/>
-		<!--<b:xscript x:src="js/jquery.dropkick-1.0.0.js"/>-->
 		<b:xscript x:src="js/common.js"/>
-
 		<p:content/>
 	</t:javascript_body>
-
-	<t:javascript_content_likes>
-		<cdata><![CDATA[
-
-					<!-- facebook like > -->
-					<div id="fb-root"></div>
-					<script>(function(d, s, id) {
-					  var js, fjs = d.getElementsByTagName(s)[0];
-					  if (d.getElementById(id)) return;
-					  js = d.createElement(s); js.id = id;
-					  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
-					  fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));</script>
-					<!-- facebook like < -->
-
-					<!-- twitter like > -->
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					<!-- twitter like < -->
-
-					<!-- google plus like > -->
-					<script type="text/javascript">
-					  window.___gcfg = {lang: 'ru'};
-
-					  (function() {
-						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-						po.src = 'https://apis.google.com/js/plusone.js';
-						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					  })();
-					</script>
-
-					<!-- google plus like < -->
-
-
-		]]></cdata>
-	</t:javascript_content_likes>
 
 </templates>
