@@ -8,7 +8,6 @@
 
 	<t:page>
 		<b:page>
-			Hello world
 			<p:content/>
 		</b:page>
 	</t:page>

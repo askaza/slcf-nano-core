@@ -35,16 +35,16 @@
 <t:xtitle><p:content/></t:xtitle>
 
 <t:xstyles>
-	<b:xlink x:href="css/styles_main.css"><m:style/></b:xlink>
+	<b:xlink x:href="css/main.styles.css"><m:style/></b:xlink>
 	<p:content/>
 	<cdata><![CDATA[<!--[if IE 9 ]>]]></cdata>
-		<b:xlink x:href="css/ie9.css"><m:style/></b:xlink>
+		<b:xlink x:href="css/main.styles.ie9.css"><m:style/></b:xlink>
 	<cdata><![CDATA[<![endif]-->]]></cdata>
 	<cdata><![CDATA[<!--[if IE 8 ]>]]></cdata>
-		<b:xlink x:href="css/ie8.css"><m:style/></b:xlink>
+		<b:xlink x:href="css/main.styles.ie8.css"><m:style/></b:xlink>
 	<cdata><![CDATA[<![endif]-->]]></cdata>
 	<cdata><![CDATA[<!--[if lt IE 8 ]>]]></cdata>
-		<b:xlink x:href="css/ie7.css"><m:style/></b:xlink>
+		<b:xlink x:href="css/main.styles.ie7.css"><m:style/></b:xlink>
 	<cdata><![CDATA[<![endif]-->]]></cdata>
 </t:xstyles>
 
